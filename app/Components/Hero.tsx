@@ -18,8 +18,11 @@ export default function Hero() {
                     {/* Name */}
                     <div className="flex flex-col  items-start">
 
-                        <div className="flex items-center gap-2 px-7 py-2 rounded-full shadow-sm">
-                            <span className="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+                        <div className="flex items-center gap-3 px-7 py-2 rounded-full shadow-sm">
+                            <span className="relative flex h-3 w-3">
+                                <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_10px_#22c55e,0_0_20px_#22c55e]"></span>
+                            </span>
                             <span className="text-sm font-medium tracking-wide">
                                 AVAILABLE FOR PROJECTS
                             </span>
