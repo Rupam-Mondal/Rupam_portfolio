@@ -1,9 +1,22 @@
+import { Lora, Oswald } from "next/font/google";
+import Navbar from "./Components/Navbar";
+
+const oswald = Oswald({
+  subsets: ["latin"],        
+  weight: ["200","300","400","500","600","700"], 
+  style: ["normal"],         
+  display: "swap",           
+  variable: "--font-oswald", 
+  preload: true,             
+  adjustFontFallback: true,  
+});
+
 export default function Home() {
   return (
     <>
-      <div>
-        Hello welcome to next
-      </div>
+      <main className="min-h-screen w-full relative">
+        <Navbar/>
+      </main>
     </>
   );
 }
