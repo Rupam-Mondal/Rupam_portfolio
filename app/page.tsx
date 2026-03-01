@@ -1,5 +1,6 @@
 import { Lora, Oswald } from "next/font/google";
 import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 
 const oswald = Oswald({
   subsets: ["latin"],        
@@ -14,8 +15,9 @@ const oswald = Oswald({
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen w-full relative">
+      <main className="min-h-screen w-full relative select-none">
         <Navbar/>
+        <Hero/>
       </main>
     </>
   );

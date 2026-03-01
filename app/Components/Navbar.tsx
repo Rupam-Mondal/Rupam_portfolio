@@ -27,15 +27,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full h-20 relative z-50">
+      <nav className="w-full h-20 absolute z-50 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full flex items-center justify-between">
           
           <div className="flex flex-col justify-center">
-            <div className={`${oswald.className} text-[32px] font-normal`}>
+            <div className={`${oswald.className} text-[32px] font-bold`}>
               RUPAM <span className="text-gray-400">MONDAL</span>
             </div>
 
-            <div className={`${oswald.className} flex items-center text-[18px] font-normal`}>
+            <div className={`${oswald.className} flex items-center text-[18px] font-bold`}>
               <Minus size={16} strokeWidth={2.5} className="text-gray-400 mr-2" />
               SOFTWARE <span className="text-gray-400 ml-1">DEVELOPER</span>
             </div>
