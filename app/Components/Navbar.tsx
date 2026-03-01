@@ -1,40 +1,80 @@
+
+
 import { Oswald } from "next/font/google";
-import { ArrowBigUp, Minus, MoveUpRight } from "lucide-react";
+import { Minus, MoveUpRight } from "lucide-react";
+
 
 const oswald = Oswald({
-    subsets: ["latin"],
-    weight: ["200", "300", "400", "500", "600", "700"],
-    style: ["normal"],
-    display: "swap",
-    variable: "--font-oswald",
-    preload: true,
-    adjustFontFallback: true,
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 export default function Navbar() {
-    return (
-        <>
-            <nav className="w-full h-20 px-40">
-                <div className="max-w-7xl mx-auto w-full h-full flex items-center justify-between">
-                    {/* Name */}
-                    <div className="flex flex-col justify-center items-center px-2">
-                        <div className={`${oswald.className} text-[32px] font-normal`}>RUPAM <span className="text-gray-400">MONDAL</span></div>
-                        <div className={`${oswald.className} w-full text-[20px] font-normal flex justify-between`}><div className="flex items-center"><Minus /></div><div>SOFTWARE <span className="text-gray-400">DEVELOPER</span></div></div>
-                    </div>
+  return (
+    <>
+  
+      <nav className="w-full h-20">
 
-                    {/* Nav links */}
-                    <div className={`h-full flex items-center gap-10 text-[25px] font-normal ${oswald.className}`}>
-                        <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100">Home</div>
-                        <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100">About</div>
-                        <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100">Projects</div>
-                    </div>
+      
+        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full flex items-center justify-between">
 
-                    {/* CTA */}
-                    <div className="">
-                        <button className={`px-5 py-2 bg-black text-white rounded-full text-[20px] font-normal flex justify-center items-center ${oswald.className} cursor-pointer gap-2`}><div>let's talk</div> <div className=""><MoveUpRight size={16} strokeWidth={3}/></div></button>
-                    </div>
-                </div>
-            </nav>
-        </>
-    )
+          {/*  (NAME SECTION) */}
+          <div className="flex flex-col justify-center">
+            
+           
+            <div className={`${oswald.className} text-[32px] font-normal`}>
+              RUPAM <span className="text-gray-400">MONDAL</span>
+            </div>
+
+           
+            <div className={`${oswald.className} flex items-center text-[18px] font-normal`}>
+              
+           
+              <Minus 
+                size={16} 
+                strokeWidth={2.5} 
+                className="text-gray-400 mr-2"
+              />
+
+              SOFTWARE <span className="text-gray-400 ml-1">DEVELOPER</span>
+            </div>
+          </div>
+
+
+          {/* (NAV LINKS)*/}
+          <div className={`h-full flex items-center gap-10 text-[25px] font-normal ${oswald.className}`}>
+
+            <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
+              Home
+            </div>
+
+            <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
+              About
+            </div>
+
+            <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
+              Projects
+            </div>
+
+          </div>
+
+
+          {/*  RIGHT SIDE (CTA BUTTON)*/}
+          <div>
+            <button
+              className={`group px-6 py-2 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
+            >
+              let's talk
+              <MoveUpRight
+                size={16}
+                strokeWidth={3}
+              />
+            </button>
+          </div>
+
+        </div>
+      </nav>
+    </>
+  );
 }
