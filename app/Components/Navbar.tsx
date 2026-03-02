@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Oswald } from "next/font/google";
 import { Minus, MoveUpRight, Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function Navbar() {
     <>
       <nav className="w-full h-20 absolute z-50 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full flex items-center justify-between">
-          
+
           <div className="flex flex-col justify-center">
             <div className={`${oswald.className} text-[32px] font-bold`}>
               RUPAM <span className="text-gray-400">MONDAL</span>
@@ -42,15 +43,17 @@ export default function Navbar() {
           </div>
 
           <div className={`hidden md:flex h-full items-center gap-10 text-[25px] font-normal ${oswald.className}`}>
-            <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
+            <Link href="/" className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
               Home
-            </div>
-            <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
+            </Link>
+
+            <Link href="/about" className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
               About
-            </div>
-            <div className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
+            </Link>
+
+            <Link href="/Projects" className="cursor-pointer p-2 rounded-md hover:bg-gray-100 transition duration-300">
               Projects
-            </div>
+            </Link>
           </div>
 
           <div className="hidden md:block">
@@ -75,19 +78,17 @@ export default function Navbar() {
 
           <div
             onClick={closeMenu}
-            className={`absolute inset-0 backdrop-blur-md bg-black/30 transition-opacity duration-500 ${
-              animate ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 backdrop-blur-md bg-black/30 transition-opacity duration-500 ${animate ? "opacity-100" : "opacity-0"
+              }`}
           />
 
           <div
             className={`absolute bottom-0 left-0 w-full bg-white rounded-t-3xl p-10 
             transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
-            ${
-              animate
+            ${animate
                 ? "translate-y-0 opacity-100 scale-100"
                 : "translate-y-full opacity-0 scale-95"
-            }`}
+              }`}
           >
             <div className="flex justify-end mb-8">
               <button onClick={closeMenu} className="cursor-pointer">
