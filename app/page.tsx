@@ -1,6 +1,7 @@
 import { Lora, Oswald } from "next/font/google";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
+import "./globals.css";
 
 const oswald = Oswald({
   subsets: ["latin"],        

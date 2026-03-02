@@ -2,7 +2,7 @@
 
 import { Oswald } from "next/font/google";
 import hero_rupam from "../assets/Home/Hero_rupam.png";
-import { Github, Linkedin, Send, MessageCircle, MessageCircleMore, Mail } from "lucide-react";
+import { Github, Linkedin, Send, MessageCircle, MessageCircleMore, Mail, Minus, MoveUpRight, Download } from "lucide-react";
 
 const oswald = Oswald({
     subsets: ["latin"],
@@ -71,7 +71,49 @@ export default function Hero() {
                 </div>
 
 
-                <div></div>
+                <div className="flex w-full mt-10">
+                    <div className="flex flex-col gap-3 flex-1">
+
+                        <div className={`flex items-center text-[48px] font-semibold ${oswald.className}`}>
+                            <Minus className="w-8 h-8 mr-4 shrink-0" />
+                            <span>FULL STACK <span className="text-gray-400">DEVELOPER</span></span>
+                        </div>
+
+                        <div className={`flex items-center text-[48px] font-semibold ${oswald.className}`}>
+                            <Minus className="w-8 h-8 mr-4 shrink-0" />
+                            <span>DEVOPS <span className="text-gray-400">ENGINEER</span></span>
+                        </div>
+
+                        <div className={`flex items-center text-[48px] font-semibold ${oswald.className}`}>
+                            <Minus className="w-8 h-8 mr-4 shrink-0" />
+                            <span>JAVA <span className="text-gray-400">DEVELOPER</span></span>
+                        </div>
+
+                    </div>
+
+                    <div className="flex flex-col w-1/2 h-full justify-between ">
+                        <div className={`text-[24px] ${oswald.className} `}>I enjoy working across both <strong>frontend</strong> and <strong>backend</strong> technologies, transforming ideas into real-world digital solutions through clean, maintainable code and thoughtful design. From responsive user interfaces to secure, scalable backend systems.</div>
+                        <div className="w-full flex gap-5">
+                            <button
+                                className={`group px-9 py-4 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
+                            >
+                                let's talk
+                                <MoveUpRight size={16} strokeWidth={3} />
+                            </button>
+                            <button
+                                className={`px-9 py-4 bg-white rounded-full 
+  shadow-[0_15px_35px_rgba(0,0,0,0.25)] 
+  hover:shadow-[0_20px_45px_rgba(0,0,0,0.35)] 
+  flex items-center text-[20px] gap-3 
+  font-medium transition-all duration-300 
+  ${oswald.className} cursor-pointer`}
+                            >
+                                Resume
+                                <Download className="w-5 h-5" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
