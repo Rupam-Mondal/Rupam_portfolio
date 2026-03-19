@@ -2,6 +2,7 @@ import { Lora, Oswald } from "next/font/google";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import "./globals.css";
+import Footer from "./Components/Footer";
 
 const oswald = Oswald({
   subsets: ["latin"],        
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="min-h-screen w-full relative select-none">
         <Navbar/>
         <Hero/>
+        <Footer/>
       </main>
     </>
   );

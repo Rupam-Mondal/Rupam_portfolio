@@ -12,7 +12,7 @@ const oswald = Oswald({
 
 export default function Hero() {
     return (
-        <section className="w-full h-screen pt-28">
+        <section className="w-full pt-28">
             <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full flex flex-col w-full">
                 <div className="flex justify-between">
                     {/* Name */}
