@@ -20,7 +20,7 @@ export default function Home() {
       <main className="min-h-screen w-full relative select-none">
         <Navbar/>
         <Hero/>
-        <Footer/>
+        {/* <Footer/> */}
       </main>
     </>
   );

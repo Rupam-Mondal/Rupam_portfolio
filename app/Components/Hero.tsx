@@ -13,7 +13,8 @@ const oswald = Oswald({
 export default function Hero() {
     return (
         <section className="w-full pt-28">
-            <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full flex flex-col w-full">
+            {/* desktop view */}
+            <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full hidden md:flex flex-col w-full">
                 <div className="flex justify-between">
                     {/* Name */}
                     <div className="flex flex-col  items-start">
@@ -114,6 +115,106 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* mobile view */}
+            <div className="max-w-7xl relative mx-auto px-6 md:px-10 lg:px-16 h-full md:hidden flex flex-col w-full">
+                <div className="w-full flex flex-col gap-6 relative">
+                    <div className="w-fit flex items-center gap-3 px-7 py-2 rounded-full shadow-sm">
+                        <span className="relative flex h-3 w-3">
+                            <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_10px_#22c55e,0_0_20px_#22c55e]"></span>
+                        </span>
+                        <span className="text-medium font-medium tracking-wide">
+                            AVAILABLE FOR PROJECTS
+                        </span>
+                    </div>
+
+                    <div className="w-full">
+                        <h1 className={`text-[80px] leading-none ${oswald.className} font-bold`}>RUPAM</h1>
+                        <h1 className={`text-[80px] text-gray-400 leading-none ${oswald.className} font-bold`}>MONDAL.</h1>
+                    </div>
+
+                    <div className="w-full flex flex-col gap-2">
+                        <div className={`flex items-center text-[24px] font-semibold ${oswald.className}`}>
+                            <Minus className="w-8 h-8 mr-1 shrink-0" />
+                            <span>FULL STACK <span className="text-gray-400">DEVELOPER</span></span>
+                        </div>
+
+                        <div className={`flex items-center text-[24px] font-semibold ${oswald.className}`}>
+                            <Minus className="w-8 h-8 mr-1 shrink-0" />
+                            <span>DEVOPS <span className="text-gray-400">ENGINEER</span></span>
+                        </div>
+
+                        <div className={`flex items-center text-[24px] font-semibold ${oswald.className}`}>
+                            <Minus className="w-8 h-8 mr-1 shrink-0" />
+                            <span>JAVA <span className="text-gray-400">DEVELOPER</span></span>
+                        </div>
+                    </div>
+
+                    <div className="absolute h-full w-1 bg-gray-300 right-2" />
+
+                    <div
+                        onClick={() => window.open("https://www.linkedin.com/in/rupam-mondal-37b653252/", "_blank")}
+                        className="h-10 w-10 cursor-pointer absolute rounded-full flex bg-white justify-center items-center -right-3 z-21 top-0"
+                    >
+                        <Linkedin />
+                    </div>
+
+                    <div
+                        onClick={() => window.open("https://github.com/Rupam-Mondal", "_blank")}
+                        className="h-10 w-10 cursor-pointer bg-white absolute rounded-full flex justify-center items-center -right-3 z-21 top-16"
+                    >
+                        <Github />
+                    </div>
+
+                    <div
+                        onClick={() => window.open("https://wa.me/919339388730", "_blank")}
+                        className="h-10 w-10 cursor-pointer bg-white absolute rounded-full flex justify-center items-center -right-3 z-21 top-34"
+                    >
+                        <MessageCircleMore />
+                    </div>
+
+                    <div
+                        onClick={() => window.open("mailto:rupammondal564@gmail.com")}
+                        className="h-10 w-10 cursor-pointer bg-white absolute rounded-full flex justify-center items-center -right-3 z-21 top-52"
+                    >
+                        <Mail />
+                    </div>
+
+
+                    <div className="absolute w-10 h-7/12 bg-white z-20 -right-5 top-0"></div>
+
+                </div>
+
+                {/* <div className="w-full mt-5">
+                    <div className={`text-[20px] ${oswald.className} `}>I enjoy working across both <strong>frontend</strong> and <strong>backend</strong> technologies, transforming ideas into real-world digital solutions through clean code and thoughtful design.</div>
+                </div> */}
+
+
+                <div className="w-full flex gap-5 mt-8">
+                    <button
+                        className={`group px-7 py-3 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
+                    >
+                        let's talk
+                        <MoveUpRight size={16} strokeWidth={3} />
+                    </button>
+                    <button
+                        className={`px-7 py-3 bg-white rounded-full 
+  shadow-[0_15px_35px_rgba(0,0,0,0.25)] 
+  hover:shadow-[0_20px_45px_rgba(0,0,0,0.35)] 
+  flex items-center text-[20px] gap-3 
+  font-medium transition-all duration-300 
+  ${oswald.className} cursor-pointer`}
+                    >
+                        Resume
+                        <Download className="w-5 h-5" />
+                    </button>
+                </div>
+
+
+
+
             </div>
         </section>
     );
