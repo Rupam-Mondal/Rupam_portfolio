@@ -120,7 +120,7 @@ export default function Hero() {
             {/* mobile view */}
             <div className="max-w-7xl relative mx-auto px-6 md:px-10 lg:px-16 h-full md:hidden flex flex-col w-full">
                 <div className="w-full flex flex-col gap-6 relative">
-                    <div className="w-fit flex items-center gap-3 px-7 py-2 rounded-full shadow-sm">
+                    <div className="w-fit flex items-center gap-3 px-4 py-2 rounded-full shadow-sm">
                         <span className="relative flex h-3 w-3">
                             <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
                             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_10px_#22c55e,0_0_20px_#22c55e]"></span>
@@ -131,22 +131,22 @@ export default function Hero() {
                     </div>
 
                     <div className="w-full">
-                        <h1 className={`text-[80px] leading-none ${oswald.className} font-bold`}>RUPAM</h1>
-                        <h1 className={`text-[80px] text-gray-400 leading-none ${oswald.className} font-bold`}>MONDAL.</h1>
+                        <h1 className={`text-[75px] leading-none ${oswald.className} font-bold`}>RUPAM</h1>
+                        <h1 className={`text-[75px] text-gray-400 leading-none ${oswald.className} font-bold`}>MONDAL.</h1>
                     </div>
 
                     <div className="w-full flex flex-col gap-2">
-                        <div className={`flex items-center text-[24px] font-semibold ${oswald.className}`}>
+                        <div className={`flex items-center text-[22px] font-semibold ${oswald.className}`}>
                             <Minus className="w-8 h-8 mr-1 shrink-0" />
                             <span>FULL STACK <span className="text-gray-400">DEVELOPER</span></span>
                         </div>
 
-                        <div className={`flex items-center text-[24px] font-semibold ${oswald.className}`}>
+                        <div className={`flex items-center text-[22px] font-semibold ${oswald.className}`}>
                             <Minus className="w-8 h-8 mr-1 shrink-0" />
                             <span>DEVOPS <span className="text-gray-400">ENGINEER</span></span>
                         </div>
 
-                        <div className={`flex items-center text-[24px] font-semibold ${oswald.className}`}>
+                        <div className={`flex items-center text-[22px] font-semibold ${oswald.className}`}>
                             <Minus className="w-8 h-8 mr-1 shrink-0" />
                             <span>JAVA <span className="text-gray-400">DEVELOPER</span></span>
                         </div>
@@ -192,15 +192,15 @@ export default function Hero() {
                 </div> */}
 
 
-                <div className="w-full flex gap-5 mt-8">
+                <div className="w-full flex gap-5 mt-10">
                     <button
-                        className={`group px-7 py-3 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
+                        className={`group px-5 py-3 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
                     >
                         let's talk
                         <MoveUpRight size={16} strokeWidth={3} />
                     </button>
                     <button
-                        className={`px-7 py-3 bg-white rounded-full 
+                        className={`px-5 py-3 bg-white rounded-full 
   shadow-[0_15px_35px_rgba(0,0,0,0.25)] 
   hover:shadow-[0_20px_45px_rgba(0,0,0,0.35)] 
   flex items-center text-[20px] gap-3 
