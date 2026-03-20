@@ -193,6 +193,7 @@ export default function Hero() {
 
 
                 <div className="w-full flex gap-5 mt-10">
+                    
                     <button
                         className={`group px-5 py-3 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
                     >
