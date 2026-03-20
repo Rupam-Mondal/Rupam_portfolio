@@ -93,7 +93,7 @@ export default function Hero() {
 
                     <div className="flex flex-col w-1/2 h-full justify-between ">
                         <div className={`text-[24px] ${oswald.className} `}>I enjoy working across both <strong>frontend</strong> and <strong>backend</strong> technologies, transforming ideas into real-world digital solutions through clean, maintainable code and thoughtful design. From responsive user interfaces to secure, scalable backend systems.</div>
-                        <div className="w-full flex gap-5">
+                        <div className="w-full flex gap-5 mt-4">
                             <button
                                 className={`group px-9 py-4 bg-black text-white rounded-full text-[20px] font-normal flex items-center gap-2 ${oswald.className} cursor-pointer transition duration-300 hover:bg-gray-800`}
                             >
