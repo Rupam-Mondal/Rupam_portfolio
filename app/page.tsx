@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import "./globals.css";
 import Footer from "./Components/Footer";
+import AboutComponent from "./Components/AboutComponent";
 
 const oswald = Oswald({
   subsets: ["latin"],        
@@ -20,6 +21,7 @@ export default function Home() {
       <main className="min-h-screen w-full relative select-none">
         <Navbar/>
         <Hero/>
+        <AboutComponent/>
         {/* <Footer/> */}
       </main>
     </>
