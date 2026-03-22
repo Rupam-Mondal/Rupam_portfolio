@@ -101,6 +101,12 @@ export default function AboutComponent() {
                             })}
                         </div>
                     </div>
+
+                    <div className="w-full">
+                        <p className={`text-[16px] font-medium px-4 leading-[1.2] ${oswald.className} mt-[30px] text-center`}>
+                            "I believe that great technology should be invisible—empowering users without getting in their way. My goal is always to go beyond 'it works' to 'it’s optimized, secure, and intuitive.' <span className="text-gray-400">Whether I’m architecting a new API or refining a UI component, I prioritize performance, maintainability.</span>"
+                        </p>
+                    </div>
                 </div>
             </section>
         </>
