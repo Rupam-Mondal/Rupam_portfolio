@@ -24,7 +24,7 @@ export default function AboutComponent() {
     return (
         <>
 
-            <section className="w-full mt-[80px]">
+            <section className="w-full mt-[150px]">
 
                 {/* desktop view */}
                 <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 h-full hidden md:flex flex-col w-full">
